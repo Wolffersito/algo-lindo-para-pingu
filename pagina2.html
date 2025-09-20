@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: #f7e8ff;
+        }
+
+        nav {
+            background: #dbafef;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            padding: 0 15px;
+            gap: 90px;
+            position: fixed;  
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;     
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        nav button {
+            background: #e1964b;
+            color: #ffffff;
+            border: 8px black;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background: #000000;
+            color: rgb(255, 140, 0);
+            border: 5px solid rgb(133, 0, 0);
+            box-shadow:
+             -2px -2px 2px black,
+             2px -2px 2px black,
+             -2px 2px 2px black,
+             2px 2px 2px black,
+             0px 0px 10px rgb(106, 59, 59);
+             transform: scale(1.05);
+        }
+
+        .nav-title-img {
+            height: 80px; 
+            background: rgb(245, 212, 212);
+            border: 7px solid #f5724a;
+            border-radius: 10px;
+            padding: 8px 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            top: 10px; 
+            z-index: 101; 
+        }
+
+        .nav-title-img:hover {
+            background: #000000;
+            border-color: #922200;
+            transform: scale(1.1);
+            box-shadow:
+             -2px -2px 2px black,
+             2px -2px 2px black,
+             -2px 2px 2px black,
+             2px 2px 2px black,
+             0px 0px 10px rgb(106, 59, 59);
+        }
+
+        .center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .imagen-grande {
+            max-width: 40%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <button onclick="window.location.href='pagina3.html'">Recuerditos💖</button>
+        <img src="chaparrita.png" alt="Chaparrita" class="nav-title-img">
+        <button onclick="window.location.href='index.html'">Volver atras👈</button>
+    </nav>
+
+    <div class="center">
+        <img src="Carta de Pingu.png" alt="Carta de Pingu" class="imagen-grande">
+    </div>
+
+</body>
+</html>
