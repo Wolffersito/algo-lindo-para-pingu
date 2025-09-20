@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuerditos 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7e8ff;
+    }
+
+    
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #dbafef;
+      height: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 0 8px 8px;
+      padding: 0 15px;
+      gap: 90px;
+      z-index: 1000;
+    }
+
+    nav button {
+      background: #e1964b;
+      color: #ffffff;
+      border: 8px black;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 26px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      background: #000000;
+      color: rgb(255, 140, 0);
+      border: 5px solid rgb(133, 0, 0);
+      box-shadow:
+       -2px -2px 2px black,
+       2px -2px 2px black,
+       -2px 2px 2px black,
+       2px 2px 2px black,
+       0px 0px 10px rgb(106, 59, 59);
+       transform: scale(1.05);
+    }
+
+    .nav-title-img {
+      height: 70px; 
+      background: rgb(245, 212, 212);
+      border: 7px solid #f5724a;
+      border-radius: 10px;
+      padding: 6px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-title-img:hover {
+      background: #000000;
+      border-color: #922200;
+      transform: scale(1.1);
+      box-shadow:
+       -2px -2px 2px black,
+       2px -2px 2px black,
+       -2px 2px 2px black,
+       2px 2px 2px black,
+       0px 0px 10px rgb(106, 59, 59);
+    }
+
+    
+    .content {
+      padding-top: 110px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    
+    .image-section {
+  display: flex;
+  align-items: center;
+  margin: 300px; 
+  gap: 90px;
+  max-width: 90%; 
+}
+
+.image-section.left {
+  flex-direction: row;
+  margin-left: 0;      
+  margin-right: auto;   
+}
+
+.image-section.right {
+  flex-direction: row-reverse;
+  margin-left: auto;    
+  margin-right: 0;      
+}
+
+.image-section img {
+  width: 40%;
+  max-width: 500px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+.image-section .text {
+  font-size: 18px;
+  max-width: 400px;
+  line-height: 1.5;
+  color: #333;
+}
+    .text {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text .fecha {
+    font-size: 1.3rem;
+    color: #6a0dad;
+    margin: 0 0 5px 0;
+}
+
+.text .titulo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.lightbox {
+  display: nome;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.lightbox img:hover {
+  transform: scale(1.02);  
+}
+
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <button onclick="window.location.href='index.html'">Volver 🔙</button>
+    <img src="chaparrita.png" alt="Chaparrita" class="nav-title-img">
+    <button onclick="window.location.href='pagina2.html'">Porque?</button>
+  </nav>
+
+  
+  <div class="content">
+
+    <div class="image-section right">
+  <img src="fotos/cocina.png" alt="Foto de la cocina">
+  <div class="text">
+      <h3 class="fecha">16/04/25</h3>
+      <h2 class="titulo">Recuerdo en la cocina</h2>
+      <p>Hola chaparrita</p>
+  </div>
+</div>
+
+
+<div class="image-section left">
+  <img src="fotos/corazones.jpg" alt="Foto de corazones">
+  <div class="text">
+    <h3 class="fecha">19/04/25</h3>
+    <h2 class="titulo">xxxxxxxxxxx</h2>
+    <p>aaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  </div>
+</div>
+
+    <div class="image-section right">
+      <img src="fotos/foto peli la princesa y el sapo.jpg" alt="La Princesa y el Sapo">
+      <div class="text">
+        <h3 class="fecha">29/07/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaaaa</p>
+      </div>
+    </div>
+
+    <div class="image-section left">
+      <img src="fotos/mundido en mc.jpg" alt="Mundito">
+      <div class="text">
+        <h3 class="fecha">06/05/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaa</p>
+        06/05/25</div>
+    </div>
+
+    <div class="image-section right">
+      <img src="fotos/parejita lol.jpg" alt="Par en Lol">
+      <div class="text">
+        <h3 class="fecha">09/06/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaaaaa</p>
+      </div>
+    </div>
+
+    <div class="image-section left">
+      <img src="fotos/Peli Eres una zorra palmer.jpg" alt="La zorra de palmer">
+      <div class="text">
+        <h3 class="fecha">26/07/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaaaaaa</p>
+       </div>
+    </div>
+
+    <div class="image-section right">
+      <img src="fotos/Peli Love and Other Drugs.jpg" alt="Love and other Drugs">
+      <div class="text">
+        <h3 class="fecha">28/07/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+      </div>
+    </div>
+
+    <div class="image-section left">
+      <img src="fotos/Peli shrek 1.jpg" alt="shrek 1">
+      <div class="text">
+        <h3 class="fecha">09/06/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaaaaaaaa</p>
+      </div>
+    </div>
+
+    <div class="image-section right">
+      <img src="fotos/peli shrek 2.jpg" alt="Shrek 2">
+      <div class="text">
+        <h3 class="fecha">09/06/25</h3>
+        <h2 class="titulo">xxxxxxxxxxxxxxxxxx</h2>
+        <p>aaaaaaaaaaaaaaaa</p>
+        09/06/25</div>
+    </div>
+
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="imgen ampliada" id="lightbox-img">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.image-section img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+
+    });
+  </script>
+
+</body>
+</html>
